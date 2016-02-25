@@ -5,15 +5,15 @@
               bgcChange(tr[i]);
           }
      
-      }         
+      }  ;       
 	 function bgcChange(obj)
      {
         obj.onmouseover=function(){
             obj.style.backgroundColor="#f2f2f2";
-        }
+        };
         obj.onmouseout=function(){
             obj.style.backgroundColor="#fff";
-        }
+        };
 	 }
    
 	
@@ -32,10 +32,10 @@
         tr.appendChild(xh);
         tr.appendChild(xm);
         tr.appendChild(del);
-        var tr = document.getElementsByTagName("tr");
+        var tr1 = document.getElementsByTagName("tr");
           for(var i= 0;i<tr.length;i++)
           {
-              bgcChange(tr[i]);
+              bgcChange(tr1[i]);
           }
      }
      
