@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Simple Example</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+  <script type="text/jscript" src="js/node.js"></script>
+  <link rel="stylesheet" href="css/node.css"/>
+ </head> 
+ <body> 
+	   <table border="1" width="50%" id="table">
+	   <tr>
+		<th>Book_ID</th>
+		<th>Name</th>
+		<th>Opeartion</th>
+	   </tr>  
+
+	   <tr>
+		<td>BI001</td>
+		<td>Algorithm Design</td>
+		<td><a href="javascript:;" onclick="del(this);">Delete</a></td>   
+	   </tr>
+
+	   <tr>
+		<td>BI002</td>
+		<td>Data Analytics</td>
+		<td><a href="javascript:;" onclick="del(this);">Delete</a></td>   
+	   </tr>  
+
+	   </table>
+	   <input type="button" value="Add Book" onclick="add()" />   
+</html>

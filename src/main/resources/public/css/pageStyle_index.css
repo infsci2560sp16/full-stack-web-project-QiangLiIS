@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* globalStyle Begin */
+*
+{
+	margin: 0;
+	padding:0;
+	text-decoration:none;
+	border:0;
+	list-style:none
+}
+/* globalStyle End */
+
+.bannerBox
+{
+	width:100%;
+	height:240px;
+	text-indent:-500px;
+	overflow:hidden;
+	background: url(../images/A_bgBlue.png) no-repeat center bottom #4fa4ff;
+}
+
+.portrait
+{
+	width:200px;
+	height:200px;
+	margin:0 auto
+}
+
+.portrait img
+{
+	width:100%;
+	height:100%;
+}
+
+.myName
+{
+	width:360px;
+	height:100px;
+	margin:0 auto;
+	
+}
+
+.myInfo
+{
+	width:380px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	
+}
+
+.live
+{
+	width:120px;
+	padding-left:22px;
+	height:24px;
+	line-height:28px;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	color:#646464;
+	float:left;
+	background:url(../images/point.png) left center no-repeat;
+	
+}
+
+.sex
+{
+	width:80px;
+	padding-left:22px;
+	height:24px;
+	line-height:28px;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	color:#646464;
+	float:left;
+	background:url(../images/sex.png)left center no-repeat;
+}
+
+.old
+{
+	width:100px;
+	padding-left:22px;
+	height:24px;
+	line-height:28px;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	color:#646464;
+	float:left;
+	background:url(../images/old.png)left center no-repeat;
+}
+
+.nav
+{
+	width:460px;
+	height:100px;
+	margin:150px auto 0 auto;
+}
+
+.nav a
+{
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-family:arial;
+	font-size:18px;
+}
+
+.photos
+{
+	width:100px;
+	height:100px;
+	float:left;
+	line-height:100px;
+	text-align:center;
+	background:url(../images/bg_o.png) 0 0 no-repeat;
+}
+
+.photos:hover
+{
+	background:url(../images/bg_o.png) 0 -115px no-repeat;
+}
+
+.forMe
+{
+	width:100px;
+	height:100px;
+	float:left;
+	line-height:100px;
+	text-align:center;
+	margin:0 80px;
+	background:url(../images/bg_o.png) 0 -230px no-repeat;
+}
+
+.forMe:hover
+{
+	background:url(../images/bg_o.png) 0 -345px no-repeat;
+}
+
+.diary
+{
+	width:100px;
+	height:100px;
+	float:left;
+	line-height:100px;
+	text-align:center;
+	background:url(../images/bg_o.png) 0 -460px no-repeat;
+}
+
+.diary:hover
+{
+	background:url(../images/bg_o.png) 0 -575px no-repeat;
+}
+
+.button
+{
+	width:420px;
+	height:42px;
+	line-height:42px;
+	text-align:center;
+	font-family:arial;
+	font-weight:bold;
+	background:url(../images/backCover.png) 0 -44px no-repeat;
+	margin:80px auto 25px auto;
+}
+
+.button:hover
+{
+	background:url(../images/backCover.png) 0 0 no-repeat;
+}
+
+.button a
+{
+	display:block;
+	width:420px;
+	height:42px;
+	color:#FFFFFF;
+}

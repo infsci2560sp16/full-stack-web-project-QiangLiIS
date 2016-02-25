@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* globalStyle Begin */
+*
+{
+	margin: 0;
+	padding:0;
+	text-decoration:none;
+	border:0;
+	list-style:none
+}
+/* globalStyle End */
+
+/* background begin */
+
+body
+{
+	background-color:#000;
+}
+
+.gpBox
+{
+	width:100%;
+	min-width:700px;
+	min-height:450px;
+	background: url(../images/A_bgBlue.png) no-repeat center bottom #4fa4ff;
+	position:relative;
+	z-index:0;
+}
+/* background End */
+
+/* element Begin */
+
+/* nameImg */
+.imgBox
+{
+	width:694px;
+	height:160px;
+	position:absolute;
+	z-index:1;
+}
+
+/* welcome */
+.imgBox span
+{
+	display:block;
+	width:auto;
+	height:42px;
+	font-family:arial;
+	font-size:36px;
+	color:#FFFFFF;
+	margin-left:800px;
+	overflow:hidden;
+}
+
+/* button */
+.gpBox a
+{
+	display:block;
+	width:260px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	background-color:#FBCA00;
+	position:absolute;
+	z-index:1;
+	font-family:arial;
+	font-size:20px;
+	color:#FFFFFF;
+}
+
+.gpBox a:hover
+{
+	background-color:#FFE500;
+}
+
+/* element End */

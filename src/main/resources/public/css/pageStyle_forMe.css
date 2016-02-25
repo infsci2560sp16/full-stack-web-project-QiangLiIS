@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* globalStyle Begin */
+*
+{
+	margin: 0;
+	padding:0;
+	text-decoration:none;
+	border:0;
+	list-style:none
+}
+/* globalStyle End */
+
+.bannerBox
+{
+	width:100%;
+	height:240px;
+	text-indent:-500px;
+	overflow:hidden;
+	background: url(../images/A_bgBlue.png) no-repeat center bottom #4fa4ff;
+}
+
+.forMeTitle
+{
+	width:960px;
+	height:36px;
+	font-family:arial;
+	margin:0 auto;
+	overflow:hidden
+}
+
+.forMeTitle span
+{
+	font-size:36px;
+	font-weight:bold;
+	color:#FFA739;
+	float:left
+}
+
+.forMeTitle a
+{
+	line-height:50px;
+	font-size:18px;
+	color:#888888;
+	float:right;
+}
+
+.forMeTitle a:hover
+{
+	color:#FF7173;
+}
+
+
+.gotoTop
+{
+	width:30px;
+	height:75px;
+	text-indent:-500px;
+	cursor:pointer;
+	overflow:hidden;
+	background:url(../images/Top.png) #23A9FF no-repeat;
+	position:fixed;
+	top:350px;
+	right:0;
+	z-index:3;
+	display:none;
+}
+
+.gotoTop:hover
+{
+	background-color:#90C9FF
+}
+
+.showInfo
+{
+	width: 960px;
+	height: auto;
+	padding: 20px;
+	background: #fff;
+	margin: 20px auto;
+}
+
+.showInfoTitleBox
+{
+	margin-top:20px;
+	width: 800px;
+	height: auto;
+	font-family: arial;
+	
+}
+
+.showInfoTitle
+{
+	width: 960px;
+	height: auto;
+	color: #646464;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.showInfoTwoTitle
+{
+	width: 960px;
+	height: auto;
+	color: #646464;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.fromAndShen
+{
+	width: 960px;
+	height: 40px;
+	margin-top: 10px;
+	border-bottom:1px solid #d0d0d0; 
+}
+
+.fromBox
+{
+	width: 750px;
+	height: 40px;
+	float: left;
+}
+
+.actTime,.actFor,.acterNo
+{
+	width: auto;
+	height: 40px;
+	line-height:40px;
+	color: #919191;
+	font-family: arial;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+}
+
+.functionBox
+{
+	width: 210px;
+	height: 40px;
+	float: left;
+	position: relative;
+}
+
+.AjiaBoxK
+{
+	width:1px;
+	height:15px;
+	position:absolute;
+	border-right:1px solid #d0d0d0;
+	top:10px; 
+	left: 140px;
+}
+
+
+
+
+.AjiaBox
+{
+	width:40px;
+	height:30px;
+	position:absolute;
+	cursor:pointer;
+	left: 92px;
+	background:url(../images/E_substation_share.png) -160px 7px no-repeat;
+}
+
+.AjianBox
+{
+	width:40px;
+	height:30px;
+	position:absolute;
+	cursor:pointer;
+	left: 164px;
+	background:url(../images/E_substation_share.png) -200px 7px no-repeat;
+}
+
+.artBox
+{
+	width: 960px;
+	height: auto;
+	border-bottom:2px solid #d0d0d0; 
+}
+
+.inArtBox
+{
+	width: 960px;
+	height: auto;
+}
+
+
+.art img
+{
+	width: 400px;
+	height: auto;
+}
+.art
+{
+	width:960px;
+	font-family: arial;
+	font-size: 14px;
+	color: #646464;
+	line-height: 24px;
+	margin: 0 0 20px 0;
+}
+
+p
+{
+	word-wrap:break-word; 
+	word-break:normal; 
+}
