@@ -14,24 +14,17 @@ canvas{
 }
 </style>
 <script type="text/javascript">
-	//打开页面即加载fuction
 	window.onload=function  () {
-	//获得canvas的id号
 	var canvas = document.getElementById("canvas");
-	//加载2D渲染表面绘图接口
 	var ctx = canvas.getContext("2d");
-	//获取页面的宽和高
 	var W = window.innerWidth, H = window.innerHeight;
-	//设置canvas的宽高与页面一致
 	canvas.width = W;
 	canvas.height = H;
-    //存放
 	var particles = [];
 	for(var i = 0; i < 20; i++)
 	{
-		//
 		particles.push(new particle());
-	}
+	};
 		function particle(){
 			this.location={x:Math.random()*W,y:Math.random()*H};
 			this.radius=0;
@@ -42,7 +35,7 @@ canvas{
 			var b=Math.round(Math.random()*255);
 			var a=Math.random();
 			this.rgba="rgba("+r+","+g+","+b+","+a+")";
-	}
+	};
 	function draw()
 	{
 		ctx.globalCompositeOperation="source-over";
@@ -65,8 +58,8 @@ canvas{
 					ctx.lineTo(p2.location.x,p2.location.y);
 					ctx.strokeStyle=p.rgba;
 					ctx.stroke();
-				}
-			}
+				};
+			};
 		
 		p.location.x=p.location.x+p.speed*Math.cos(p.angle*Math.PI/180);
 		p.location.y=p.location.y+p.speed*Math.sin(p.angle*Math.PI/180);
@@ -74,10 +67,10 @@ canvas{
 		if(p.location.x>W)p.location.x=0;
 		if(p.location.y<0)p.location.y=H;
 		if(p.location.y>H)p.location.y=0;
-			}
-		}
+			};
+		};
 		setInterval(draw,20);
-	}
+	};
 </script>
 </head>
 

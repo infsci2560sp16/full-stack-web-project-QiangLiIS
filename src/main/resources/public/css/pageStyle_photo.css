@@ -10,15 +10,6 @@
 }
 /* globalStyle End */
 
-.bannerBox
-{
-	width:100%;
-	height:240px;
-	text-indent:-500px;
-	overflow:hidden;
-	background: url(../images/A_bgBlue.png) no-repeat center bottom #4fa4ff;
-}
-
 .photoTitle
 {
 	width:93.5%;
@@ -90,24 +81,4 @@
 .photo:hover span
 {
 	color:#00CD04;
-}
-
-.gotoTop
-{
-	width:30px;
-	height:75px;
-	text-indent:-500px;
-	cursor:pointer;
-	overflow:hidden;
-	background:url(../images/Top.png) #23A9FF no-repeat;
-	position:fixed;
-	top:350px;
-	right:0;
-	z-index:3;
-	display:none;
-}
-
-.gotoTop:hover
-{
-	background-color:#90C9FF
 }

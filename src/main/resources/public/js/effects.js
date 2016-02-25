@@ -11,86 +11,78 @@ function bgH()
 	var $do1 = $("#imgBox");
 	var $do2 = $("#button");
 	
-	/*********************************************/
 	
-	var winH = $wind.height()
-	$do.hide()
-	$do.css("height",winH + "px")
+	var winH = $wind.height();
+	$do.hide();
+	$do.css("height",winH + "px");
 	
-	/**********************************************/
 	
-	var imgH = $do1.height()
+	var imgH = $do1.height();
 	
 	var theH =  (winH - imgH)/2 - 100 ;
-	$do1.css("top",theH + "px") 
+	$do1.css("top",theH + "px") ;
 	if(theH<=30)
 	{
 		$do1.css("top","30px");
 	}
 	
-	/************************************************/
 	
-	var winW = $wind.width()
-	var imgW = $do1.width()
+	var winW = $wind.width();
+	var imgW = $do1.width();
 	
 	
 	var theW =  (winW - imgW)/2 ;
-	$do1.css("left",theW + "px") 
+	$do1.css("left",theW + "px") ;
 	
-	/************************************************/
 	
 	
 	var theBtnH = theH  + 210;
-	$do2.css("top",theBtnH+"px")
-	
-	/**********************************************/
+	$do2.css("top",theBtnH+"px");
 	
 	
-	btnW = $do2.width() 
 	
-	theBtnW = (winW - btnW)/2
-	$do2.css("left",theBtnW+"px")
+	btnW = $do2.width() ;
+	
+	theBtnW = (winW - btnW)/2;
+	$do2.css("left",theBtnW+"px");
 	
 	$wind.resize(function(winHn,theHn)
 	{        
 		
-		var winHn = $wind.height();
+		var winHn1 = $wind.height();
 		
-		$do.height(Math.abs(winHn));
+		$do.height(Math.abs(winHn1));
 		
 		var imgHn = $do1.height();
 		
-		
-		var theHn =  (winHn - imgHn)/2 - 100 ;
+		var theHn1 =  (winHn1 - imgHn)/2 - 100 ;
 		$do1.css("top",theHn + "px");
 		
-		if(theHn<=30)
+		if(theHn1<=30)
 		{
 			$do1.css("top","30px");
 		}
 		
-		/******************************************/
 		
-		var theBtnHn = theHn + 210;
-		$do2.css("top",theBtnHn+"px")
+		
+		var theBtnHn = theHn1 + 210;
+		$do2.css("top",theBtnHn+"px");
 		
 		if(theBtnHn<=200)
 		{
 			$do2.css("top","200px");
 		}
 		
-		/*****************************************/
 		
 		
 		var winWn = $wind.width();
-		var imgWn = $do1.width()
-		var btnWn = $do2.width()
+		var imgWn = $do1.width();
+		var btnWn = $do2.width();
 		
 		
 		var theWn =  (winWn - imgWn)/2 ;
 		$do1.css("left",theWn + "px"); 
 		
-		/******************************/
 		
 		
 		var theBtnWn =  (winWn-btnWn)/2 ;
@@ -100,10 +92,8 @@ function bgH()
 			
 			$do2.css("top","200px");
 		}
-	
-	})
-	
-	$do.fadeIn(500)
+	});
+	$do.fadeIn(500);
 }
 
 /* bg_height End */ 
@@ -129,14 +119,14 @@ function actGroup_1()
 	
 	do1.hide();
 	setTimeout(function () {
-		do1.show(500)
-		do2.hide().show(1000)
-		do3.animate({"margin-left":0},1000)
+		do1.show(500);
+		do2.hide().show(1000);
+		do3.animate({"margin-left":0},1000);
 	}, 100);
 	
 	do4.hide();
 	setTimeout(function () {
-		do4.fadeIn(500)
+		do4.fadeIn(500);
 	}, 1000);
 	
 }
@@ -158,7 +148,7 @@ function loding()
 	success: function (imgObj) { },      
 	error: function (imgObj) { }         
 	});
-};
+}
 
 
 /*
@@ -171,12 +161,12 @@ function nav()
 	var $doDiv = $("#nav div");
 	var $doBtn = $("#btn");
 	
-	$do.animate({"margin-top":80},1000)
+	$do.animate({"margin-top":80},1000);
 	$doDiv.hide().fadeIn(2000);
 	
-	$doBtn.hide()
+	$doBtn.hide();
 	setTimeout(function () {
-		$doBtn.fadeIn(1000)
+		$doBtn.fadeIn(1000);
 	}, 800);
 }
 
@@ -193,9 +183,9 @@ function windowScroll()
 	window.onscroll = function() 
 	{
 		var t = document.documentElement.scrollTop  || document.body.scrollTop ;
-		scrollShow(t)
-	}
-	gotoTop()	
+		scrollShow(t);
+	};
+	gotoTop();
 }
 
 
@@ -216,8 +206,8 @@ function gotoTop()
 {
 	$(".gotoTop").click(function() 
 	{
-		$('body,html').animate({'scrollTop':0},500)
-	})
+		$('body,html').animate({'scrollTop':0},500);
+	});
 }
 /* Go to top End */
 
@@ -227,75 +217,75 @@ function gotoTop()
 
 function fontSize()
 {
-	var i = 14
+	var i = 14;
 	$(".AjiaBox").click(function(){
-		$(".AjianBox").css('cursor','pointer')
-		$(".AjianBox").css('background','url(./images/E_substation_share.png) -200px 7px no-repeat')
+		$(".AjianBox").css('cursor','pointer');
+		$(".AjianBox").css('background','url(./images/E_substation_share.png) -200px 7px no-repeat');
 		if(i<16)
 		{
-			i = i+2
-			$(".art p").css('font-size',i+'px')
+			i = i+2;
+			$(".art p").css('font-size',i+'px');
 		}
 		if(i == 16)
 		{
-			$(this).css('cursor','default')
-			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat')
+			$(this).css('cursor','default');
+			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat');
 		}
-	})
+	});
 	
 	$(".AjiaBox").hover(function () {
 		if(i < 16)
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -160px -97px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -160px -97px no-repeat');
 		}
 		else
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat');
 		}
 	}, function () {
 		if(i < 16)
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -160px 7px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -160px 7px no-repeat');
 		}
 		else
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -160px -44px no-repeat');
 		}
-	})
+	});
 	
 	$(".AjianBox").click(function(){
-		$(".AjiaBox").css('cursor','pointer')
-		$(".AjiaBox").css('background','url(./images/E_substation_share.png) -160px 7px no-repeat')
+		$(".AjiaBox").css('cursor','pointer');
+		$(".AjiaBox").css('background','url(./images/E_substation_share.png) -160px 7px no-repeat');
 		if(i>12)
 		{
-			i = i-2
-			$(".art p").css('font-size',i+'px')
+			i = i-2;
+			$(".art p").css('font-size',i+'px');
 		}
 		if(i==12)
 		{
-			$(this).css('cursor','default')
-			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat')
+			$(this).css('cursor','default');
+			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat');
 		}
-	})
+	});
 	
 	$(".AjianBox").hover(function () {
 		if(i > 12)
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -200px -94px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -200px -94px no-repeat');
 		}
 		else
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat');
 		}
 	}, function () {
 		if(i > 12)
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -200px 7px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -200px 7px no-repeat');
 		}
 		else
 		{
-			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat')
+			$(this).css('background','url(./images/E_substation_share.png) -200px -44px no-repeat');
 		}
-	})
+	});
 	
 }

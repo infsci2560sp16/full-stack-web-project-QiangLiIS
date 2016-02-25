@@ -5,7 +5,7 @@
               bgcChange(tr[i]);
           }
      
-      }  ;       
+      };
 	 function bgcChange(obj)
      {
         obj.onmouseover=function(){
